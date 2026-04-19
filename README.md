@@ -36,6 +36,8 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 > **Personal note:** I primarily use this with Ollama running `llama3` locally on port 11434.
 > The `.env.local` approach works well — just make sure Ollama is running before starting the gateway.
 > I also run `mistral` as a fallback: `ollama pull mistral` and set `OLLAMA_FALLBACK_MODEL=mistral` in `.env.local`.
+> I've also been experimenting with `codellama` for code-related queries — `ollama pull codellama` and
+> point specific routes at it via `OLLAMA_CODE_MODEL=codellama` in `.env.local`.
 
 ### Configuration
 
