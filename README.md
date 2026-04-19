@@ -38,6 +38,9 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 > I also run `mistral` as a fallback: `ollama pull mistral` and set `OLLAMA_FALLBACK_MODEL=mistral` in `.env.local`.
 > I've also been experimenting with `codellama` for code-related queries — `ollama pull codellama` and
 > point specific routes at it via `OLLAMA_CODE_MODEL=codellama` in `.env.local`.
+> 
+> **Tip:** If Ollama is slow on first request, it's loading the model into memory. Subsequent requests
+> are much faster. Run `ollama run llama3` once in a terminal to pre-warm the model before starting the gateway.
 
 ### Configuration
 
