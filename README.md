@@ -33,6 +33,9 @@ AI Gateway provides a unified interface for routing requests to various AI provi
    go run ./cmd/ai-gateway
    ```
 
+> **Personal note:** I primarily use this with Ollama running `llama3` locally on port 11434.
+> The `.env.local` approach works well — just make sure Ollama is running before starting the gateway.
+
 ### Configuration
 
 See the [docs](./docs) directory for full configuration reference.
