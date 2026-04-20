@@ -41,6 +41,9 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 > 
 > **Tip:** If Ollama is slow on first request, it's loading the model into memory. Subsequent requests
 > are much faster. Run `ollama run llama3` once in a terminal to pre-warm the model before starting the gateway.
+>
+> **Tip:** To quickly check which models you have available locally, run `ollama list`. Handy when
+> you forget what you've pulled and want to add a new route without downloading anything extra.
 
 ### Configuration
 
