@@ -44,6 +44,9 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 >
 > **Tip:** To quickly check which models you have available locally, run `ollama list`. Handy when
 > you forget what you've pulled and want to add a new route without downloading anything extra.
+>
+> **Tip:** I've found that setting `OLLAMA_NUM_PARALLEL=2` in `.env.local` helps when testing
+> multiple routes concurrently — prevents requests from queuing up behind each other during dev.
 
 ### Configuration
 
