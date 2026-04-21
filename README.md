@@ -55,6 +55,10 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 > **Tip:** When switching between models frequently during testing, `ollama ps` shows which models
 > are currently loaded in memory. Useful for debugging latency spikes — if a model got unloaded,
 > the next request will be slow while it reloads.
+>
+> **Tip:** I've started using `llama3.2` instead of `llama3` — noticeably better instruction
+> following and it fits in the same memory footprint. Worth the `ollama pull llama3.2` if you
+> haven't already. Update `OLLAMA_DEFAULT_MODEL=llama3.2` in `.env.local`.
 
 ### Configuration
 
@@ -73,8 +77,4 @@ See the [docs](./docs) directory for full configuration reference.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting pull requests.
-
-## License
-
-Apache 2.0 — see [LICENSE](./LICENSE) for details.
+Please read [CON
