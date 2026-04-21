@@ -47,6 +47,10 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 >
 > **Tip:** I've found that setting `OLLAMA_NUM_PARALLEL=2` in `.env.local` helps when testing
 > multiple routes concurrently — prevents requests from queuing up behind each other during dev.
+>
+> **Tip:** On macOS with Apple Silicon, Ollama uses the GPU by default which is great, but if you're
+> running other GPU-heavy tasks, set `OLLAMA_NUM_GPU=0` in `.env.local` to force CPU-only mode and
+> avoid memory pressure. Slower, but more stable during heavy multitasking.
 
 ### Configuration
 
