@@ -51,6 +51,10 @@ AI Gateway provides a unified interface for routing requests to various AI provi
 > **Tip:** On macOS with Apple Silicon, Ollama uses the GPU by default which is great, but if you're
 > running other GPU-heavy tasks, set `OLLAMA_NUM_GPU=0` in `.env.local` to force CPU-only mode and
 > avoid memory pressure. Slower, but more stable during heavy multitasking.
+>
+> **Tip:** When switching between models frequently during testing, `ollama ps` shows which models
+> are currently loaded in memory. Useful for debugging latency spikes — if a model got unloaded,
+> the next request will be slow while it reloads.
 
 ### Configuration
 
